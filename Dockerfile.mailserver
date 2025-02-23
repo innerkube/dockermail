@@ -1,0 +1,26 @@
+# mailserver용 Dockerfile
+FROM docker.io/mailserver/docker-mailserver:latest
+
+# DNS 설정
+RUN echo "nameserver 192.168.9.243" > /etc/resolv.conf
+
+# 의존성 패키지 설치 (Debian 기반)
+RUN apt-get update && apt-get install -y \
+    netcat-openbsd \
+    curl \
+    dnsutils \
+    vim \
+    sudo \
+    systemd \
+    telnet \
+    net-tools \
+    && apt-get clean
+
+# Postfix 설정 변경
+RUN cp /etc/postfix/main.cf /etc/postfix/main.cf.bak \
+    && sed -i 's/smtpd_sasl_auth_enable = no/smtpd_sasl_auth_enable = yes/' /etc/postfix/main.cf \
+    && postfix reload
+
+# 계정 생성 스크립트 복사
+COPY account.sh /usr/local/bin/account.sh
+RUN chmod +x /usr/local/bin/account.sh

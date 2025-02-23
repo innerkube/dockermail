@@ -1,0 +1,16 @@
+# rainloop용 Dockerfile
+FROM docker.io/hardware/rainloop:latest
+
+# DNS 설정
+RUN echo "nameserver 192.168.9.243" > /etc/resolv.conf
+
+# 의존성 패키지 설치 (Alpine 기반)
+RUN apk update && apk add --no-cache \
+    netcat-openbsd \
+    curl \
+    bind-tools \
+    vim \
+    sudo \
+    busybox-initscripts \
+    busybox-extras \
+    net-tools

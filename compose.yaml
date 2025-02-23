@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  mailserver:
+    image: docker.io/mailserver/docker-mailserver:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.mailserver
+    container_name: mailserver
+    hostname: mail.innerinfo.io
+    domainname: mail.innerinfo.io
+    ports:
+      - "25:25"     # SMTP
+      - "143:143"   # IMAP
+      - "587:587"   # Submission (STARTTLS)
+      - "993:993"   # IMAPS
+      - "465:465"   # SMTPS
+    volumes:
+      - ./maildata:/var/mail
+      - ./mailconfig:/tmp/docker-mailserver
+    environment:
+      - ONE_DIR=1
+      - ENABLE_SPAMASSASSIN=1
+      - ENABLE_CLAMAV=1
+    restart: always
+      #command: >
+      #bash -c "/usr/local/bin/account.sh && supervisord -c /etc/supervisord.conf"
+
+  rainloop:
+    image: docker.io/hardware/rainloop:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.rainloop
+    container_name: rainloop
+    ports:
+      - "80:8888"
+    volumes:
+      - ./rainloop/data:/rainloop/data
+    restart: always

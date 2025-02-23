@@ -1,0 +1,40 @@
+Return-Path: <hwlim@innerinfo.io>
+Delivered-To: hwlim@innerinfo.io
+Received: from mail.innerinfo.io
+	by mail.innerinfo.io with LMTP
+	id etaKJ3bQumfaBwAAt+KnJg
+	(envelope-from <hwlim@innerinfo.io>)
+	for <hwlim@innerinfo.io>; Sun, 23 Feb 2025 07:38:30 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.innerinfo.io (Postfix) with ESMTP id 8B515226090
+	for <hwlim@innerinfo.io>; Sun, 23 Feb 2025 07:38:30 +0000 (UTC)
+X-Virus-Scanned: Yes
+Received: from mail.innerinfo.io (host.containers.internal [10.88.0.1])
+	by mail.innerinfo.io (Postfix) with ESMTPA id 5B3B6226086
+	for <hwlim@innerinfo.io>; Sun, 23 Feb 2025 07:38:28 +0000 (UTC)
+MIME-Version: 1.0
+Date: Sun, 23 Feb 2025 07:38:28 +0000
+Content-Type: multipart/alternative;
+ boundary="--=_RainLoop_317_560093158.1740296308"
+From: hwlim@innerinfo.io
+Message-ID: <b7939f924a0904290232f2f69880562e@innerinfo.io>
+Subject: test
+To: hwlim@innerinfo.io
+
+
+----=_RainLoop_317_560093158.1740296308
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+test
+
+----=_RainLoop_317_560093158.1740296308
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"t=
+ext/html; charset=3Dutf-8" /></head><body><div data-html-editor-font-wrap=
+per=3D"true" style=3D"font-family: arial, sans-serif; font-size: 13px;"><=
+br>test<signature></signature></div></body></html>
+
+----=_RainLoop_317_560093158.1740296308--

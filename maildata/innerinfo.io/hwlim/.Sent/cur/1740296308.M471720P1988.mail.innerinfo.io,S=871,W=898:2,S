@@ -1,0 +1,27 @@
+MIME-Version: 1.0
+Date: Sun, 23 Feb 2025 07:38:28 +0000
+Content-Type: multipart/alternative;
+ boundary="--=_RainLoop_317_560093158.1740296308"
+X-Mailer: RainLoop/1.13.0
+From: hwlim@innerinfo.io
+Message-ID: <b7939f924a0904290232f2f69880562e@innerinfo.io>
+Subject: test
+To: hwlim@innerinfo.io
+
+
+----=_RainLoop_317_560093158.1740296308
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+test
+
+----=_RainLoop_317_560093158.1740296308
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"t=
+ext/html; charset=3Dutf-8" /></head><body><div data-html-editor-font-wrap=
+per=3D"true" style=3D"font-family: arial, sans-serif; font-size: 13px;"><=
+br>test<signature></signature></div></body></html>
+
+----=_RainLoop_317_560093158.1740296308--
